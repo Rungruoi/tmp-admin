@@ -36,3 +36,7 @@ Route::get('/profile', function () {
 Route::get('/change-password', function () {
     return view('auth.passwords.change');
 })->name('auth.password.edit');
+
+Route::get('example', function() {
+    return view('admin.example');
+})->name('example');
